@@ -1,0 +1,340 @@
+html,
+body {
+    font-family: "Playfair Display", serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.outer {
+    height: 100%;
+    overflow: hidden;
+}
+.inner {
+    width: 100%;
+    height: 200%;
+    -webkit-animation: mymove 10s linear infinite;
+    /* Safari and Chrome */
+    animation: mymove 8s linear infinite;
+    background-size: 40% 60%;
+}
+@-webkit-keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% -100%;
+    }
+}
+@keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% -100%;
+    }
+}
+
+#fullpage {
+    height: 100vh;
+    overflow: hidden;
+    section {
+        position: relative;
+        overflow: hidden;
+        .sub-section1 {
+            padding: 50px 100px;
+            h2 {
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 35px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            p {
+                color: #627b78;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+            a {
+                background: transparent;
+                padding: 10px 30px;
+                border: 1px solid #627b78;
+                color: #627b78;
+                text-decoration: none;
+            }
+        }
+        .sub-section1 {
+            height: 50vh;
+            overflow: hidden;
+            z-index: 99;
+        }
+        .sub-section2 {
+            height: 50vh;
+            overflow: hidden;
+            z-index: 99;
+        }
+    }
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        img {
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+        }
+    }
+    .top-section {
+        height: 100vh;
+        padding: 50px 100px;
+        background-image: url(../images/nav-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        h1 {
+            font-size: 80px;
+            color: #000;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            position: relative;
+            text-transform: uppercase;
+            &::after {
+                position: absolute;
+                top: 25px;
+                left: 0px;
+                width: 100%;
+                height: 1px;
+                content: "";
+                background-color: #000;
+            }
+        }
+    }
+    .section1 {
+        .sub-section1 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(238, 236, 236, 1) 0%,
+                rgba(194, 188, 188, 1) 100%
+            );
+        }
+        .sub-section2 {
+            background-image: url(../images/bgr1-removebg-preview.png);
+        }
+    }
+
+    .section2 {
+        .sub-section1 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(232, 104, 137, 1) 0%,
+                rgba(194, 45, 83, 1) 100%
+            );
+            background-size: cover;
+        }
+        .sub-section2 {
+            background-image: url(../images/bgr2-removebg-preview.png);
+        }
+    }
+    .section3 {
+        .sub-section1 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(238, 236, 236, 1) 0%,
+                rgba(194, 188, 188, 1) 100%
+            );
+        }
+        .sub-section2 {
+            background-image: url(../images/bgr1-removebg-preview.png);
+        }
+    }
+    .section4 {
+        .sub-section1 {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(232, 104, 137, 1) 0%,
+                rgba(194, 45, 83, 1) 100%
+            );
+            p,
+            a {
+                color: #b3a2ce;
+                border-color: #b3a2ce;
+            }
+        }
+        .sub-section2 {
+            background-image: url(../images/bgr2-removebg-preview.png);
+        }
+    }
+    .footer-section {
+        .sec1 {
+           background: url(../images/global_belgium_medicine_blister_packs.jpg);
+           background-size: cover;
+            height: 30vh;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                content: "";
+               
+            }
+        }
+        .sec2 {
+            height: 70vh;
+            box-sizing: border-box;
+            padding-top: 30px;
+            background-color: #000;
+            color: #fff;
+            .newslatter {
+                position: relative;
+                h2 {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 50px;
+                }
+                input {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    width: 90%;
+                    color: #fff;
+                    height: 50px;
+                    padding: 10px;
+                    font-size: 18px;
+                }
+                p {
+                    color: #9d9d9d;
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+                i {
+                    position: absolute;
+                    top: 148px;
+                    right: 45px;
+                }
+            }
+            .photos {
+                img {
+                    width: 100%;
+                }
+                h2 {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    margin-right: 10px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        top: 40px;
+                        left: 0px;
+                        width: 100%;
+                        height: 2px;
+                        content: "";
+                        background-color: #fff;
+                    }
+                }
+                .gallery {
+                    position: static;
+                    width: 100%;
+                    img {
+                        position: relative;
+                        width: 100%;
+                    }
+                }
+            }
+            .adress {
+                h2 {
+                    font-weight: bold;
+                    margin-bottom: 50px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                p {
+                    font-weight: bold;
+                }
+            }
+            .footer-bottom-section {
+                margin-top: 30px;
+                h2,
+                a {
+                    font-size: 16px;
+                    color: #9d9d9d;
+                }
+            }
+        }
+    }
+}
+
+.fixed-header {
+    z-index: 99999;
+    position: fixed;
+    top: -10px;
+    right: 110px;
+    span {
+        cursor: pointer;
+        position: fixed;
+        top: 104px;
+        left: -30px;
+        transform: rotate(-90deg);
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+    }
+    nav {
+        ul {
+            text-align: right;
+            list-style: none;
+            transform: rotate(270deg);
+            li {
+                margin-bottom: 6px;
+                a {
+                    // font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #000;
+                    text-transform: uppercase;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        top: 28px;
+                        left: 0px;
+                        width: 100%;
+                        height: 1px;
+                        content: "";
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #fullpage .top-section h1 {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #fullpage .top-section h1 {
+        font-size: 40px;
+    }
+}
