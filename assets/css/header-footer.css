@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* h1, * h2, * h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+header {
+  position: relative;
+  background-color: #fff;
+}
+
+header .header-logo img {
+  width: 100%;
+}
+
+header nav ul {
+  margin-bottom: 0px;
+}
+
+header nav ul li a {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+header nav ul li a i {
+  color: #000;
+  font-size: 12px;
+}
+
+header nav ul .catogery {
+  position: relative;
+}
+
+header nav ul .catogery:hover .shop-by-catogery {
+  display: block;
+}
+
+footer {
+  padding: 50px;
+  background-color: #2a353a;
+  color: #fff;
+}
+
+footer h2 {
+  font-size: 26px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+footer .footer-img1 img,
+footer .footer-img2 img {
+  width: 100%;
+}
+
+footer h3 {
+  margin-left: 100px;
+}
+
+footer .footer-nav {
+  margin-left: 100px;
+}
+
+footer .footer-nav ul {
+  padding-left: 0px;
+}
+
+footer .footer-nav ul li {
+  text-align: left;
+}
+
+footer .footer-nav ul li a {
+  color: #fff;
+}
+
+.footer-newslatter h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer-newslatter input {
+  width: 70%;
+  height: 40px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.footer-newslatter a {
+  background-color: #da8f87;
+  padding: 10px;
+  color: #fff;
+}
+
+.footer-newslatter .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-newslatter .footer-icons i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.shop-by-catogery {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 160px;
+  z-index: 99;
+  width: 100%;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.shop-by-catogery .sub-catogery {
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  border-right: 1px solid #000;
+  height: 700px;
+  /* hover game */
+}
+
+.shop-by-catogery .sub-catogery li {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.shop-by-catogery .sub-catogery li a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: block;
+  color: #2a353a;
+}
+
+.shop-by-catogery .sub-catogery li a:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #da8f87;
+}
+
+.shop-by-catogery .sub-catogery .immune i,
+.shop-by-catogery .sub-catogery .sex i,
+.shop-by-catogery .sub-catogery .joint-pain i,
+.shop-by-catogery .sub-catogery .weight-loss i,
+.shop-by-catogery .sub-catogery .hair-growth i,
+.shop-by-catogery .sub-catogery .addiction i,
+.shop-by-catogery .sub-catogery .others i {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.shop-by-catogery .sub-catogery .immune .fa-chevron-down,
+.shop-by-catogery .sub-catogery .sex .fa-chevron-down,
+.shop-by-catogery .sub-catogery .joint-pain .fa-chevron-down,
+.shop-by-catogery .sub-catogery .weight-loss .fa-chevron-down,
+.shop-by-catogery .sub-catogery .hair-growth .fa-chevron-down,
+.shop-by-catogery .sub-catogery .addiction .fa-chevron-down,
+.shop-by-catogery .sub-catogery .others .fa-chevron-down {
+  display: none;
+}
+
+.shop-by-catogery .sub-catogery .immune:hover,
+.shop-by-catogery .sub-catogery .sex:hover,
+.shop-by-catogery .sub-catogery .joint-pain:hover,
+.shop-by-catogery .sub-catogery .weight-loss:hover,
+.shop-by-catogery .sub-catogery .hair-growth:hover,
+.shop-by-catogery .sub-catogery .addiction:hover,
+.shop-by-catogery .sub-catogery .others:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.shop-by-catogery .sub-catogery .immune:hover .fa-chevron-right,
+.shop-by-catogery .sub-catogery .sex:hover .fa-chevron-right,
+.shop-by-catogery .sub-catogery .joint-pain:hover .fa-chevron-right,
+.shop-by-catogery .sub-catogery .weight-loss:hover .fa-chevron-right,
+.shop-by-catogery .sub-catogery .hair-growth:hover .fa-chevron-right,
+.shop-by-catogery .sub-catogery .addiction:hover .fa-chevron-right,
+.shop-by-catogery .sub-catogery .others:hover .fa-chevron-right {
+  display: none;
+}
+
+.shop-by-catogery .sub-catogery .immune:hover .fa-chevron-down,
+.shop-by-catogery .sub-catogery .sex:hover .fa-chevron-down,
+.shop-by-catogery .sub-catogery .joint-pain:hover .fa-chevron-down,
+.shop-by-catogery .sub-catogery .weight-loss:hover .fa-chevron-down,
+.shop-by-catogery .sub-catogery .hair-growth:hover .fa-chevron-down,
+.shop-by-catogery .sub-catogery .addiction:hover .fa-chevron-down,
+.shop-by-catogery .sub-catogery .others:hover .fa-chevron-down {
+  display: inline-block;
+}
+
+.shop-by-catogery .sub-catogery .immune:hover .deep-catogery,
+.shop-by-catogery .sub-catogery .sex:hover .deep-catogery,
+.shop-by-catogery .sub-catogery .joint-pain:hover .deep-catogery,
+.shop-by-catogery .sub-catogery .weight-loss:hover .deep-catogery,
+.shop-by-catogery .sub-catogery .hair-growth:hover .deep-catogery,
+.shop-by-catogery .sub-catogery .addiction:hover .deep-catogery,
+.shop-by-catogery .sub-catogery .others:hover .deep-catogery {
+  visibility: visible;
+  opacity: 1;
+  top: 10px;
+}
+
+.shop-by-catogery .sub-catogery .sex:hover .deep-catogery {
+  top: 45px;
+}
+
+.shop-by-catogery .sub-catogery .joint-pain:hover .deep-catogery {
+  top: 75px;
+}
+
+.shop-by-catogery .sub-catogery .weight-loss:hover .deep-catogery {
+  top: 105px;
+}
+
+.shop-by-catogery .sub-catogery .hair-growth:hover .deep-catogery {
+  top: 130px;
+}
+
+.shop-by-catogery .sub-catogery .addiction:hover .deep-catogery {
+  top: 160px;
+}
+
+.shop-by-catogery .sub-catogery .others:hover .deep-catogery {
+  top: 190px;
+}
+
+.shop-by-catogery .sub-catogery .deep-catogery {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  border: 1px solid #eee;
+  position: absolute;
+  text-align: left;
+  top: -100px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  left: 100%;
+}
+
+.shop-by-catogery .sub-catogery .deep-catogery li {
+  margin-bottom: 5px;
+}
+
+.shop-by-catogery .sub-catogery .deep-catogery li a {
+  color: #2a353a;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.shop-by-catogery .sub-catogery .deep-catogery li a:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  color: #da8f87;
+}
+
+@media only screen and (max-width: 1400px) {
+  .shop-by-catogery {
+    top: 145px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .shop-by-catogery {
+    top: 130px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .shop-by-catogery {
+    top: 110px;
+  }
+}
+/*# sourceMappingURL=header-footer.css.map */

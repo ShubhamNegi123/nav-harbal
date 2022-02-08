@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+$primary-color: #da8f87;
+$secondary-color: #2a353a;
+
+* {
+    font-family: "Karla", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1,h2,h3{
+        
+        font-family: 'Abril Fatface', cursive;
+    }
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.form-and-location{
+    border-top: 1px solid #eee;
+    margin-top: 100px;
+   
+    form{    
+        margin-bottom: 50px;
+        label{
+            padding-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            color: $secondary-color;
+            i{
+                font-size: 8px;
+                color: $secondary-color;
+                
+            }
+        }   
+        input{
+            border-radius: 20px;
+            border: 2px solid #eee;
+            height: 40px;
+            display: inline-block;
+            width: 100%;
+            background-color: #eee;
+        }
+        textarea{
+            background-color: #eee;
+            height: 100px;
+            width: 100%;
+            border-radius: 40px;
+            border: 2px solid #eee;
+            resize: none;
+        }
+        button{
+            color: #fff;
+            transition: all .3s ease;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 30px;
+            background-color: $secondary-color;
+            &:hover{
+                transition: all .3s ease;
+                background-color: $primary-color;                
+            }
+        }
+    }
+    .map{
+        width: 100%;
+        height: 100%;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 568px) {
+    
+    .contact-banner img {
+        width: 100%;
+        min-height: 200px;
+    }
+}

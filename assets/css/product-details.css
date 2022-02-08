@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* h1, * h2, * h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.all-products {
+  position: relative;
+  margin-top: 120px;
+  padding-bottom: 50px;
+}
+
+.all-products .product-sidebr img {
+  cursor: pointer;
+  border: 1px solid #7e7070;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.all-products h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+}
+
+.all-products h1::after {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: #da8f87;
+  content: '';
+}
+
+.all-products .products-img-wrapper {
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.all-products .products-img-wrapper img {
+  width: 100%;
+}
+
+.all-products h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.all-products p {
+  font-size: 14px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.all-products .product-details .product-name {
+  font-size: 20px;
+}
+
+.all-products .product-details .rating i {
+  color: #2a353a;
+}
+
+.all-products .product-details .rating span {
+  margin-left: 10px;
+}
+
+.all-products .product-details table {
+  margin: 30px 0px;
+}
+
+.all-products .product-details table tr td {
+  padding-right: 40px;
+  padding-bottom: 5px;
+}
+
+.all-products .product-details .add-to-card-button, .all-products .product-details .wishlist-button {
+  cursor: pointer;
+  background-color: #2a353a;
+  padding: 10px 50px;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.all-products .product-details .order-now-button {
+  cursor: pointer;
+  background-color: #2a353a;
+  padding: 10px 180px;
+  margin-top: 30px;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.all-products .product-details .read-more {
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 50px;
+}
+
+.all-products .product-details .read-more span {
+  text-transform: uppercase;
+  color: #2a353a;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.all-products .product-details .read-more i {
+  padding-left: 10px;
+}
+
+.all-products .product-details .read-more .all-about-product {
+  display: none;
+  margin-top: 50px;
+}
+
+.all-products .product-details .read-more .all-about-product h2, .all-products .product-details .read-more .all-about-product h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.all-products .product-details .read-more .all-about-product ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.all-products .product-details .read-more .all-about-product ol li {
+  padding-left: 5px;
+  margin-bottom: 3px;
+}
+
+.all-products .product-details .read-more .all-about-product p {
+  text-align: justify;
+}
+/*# sourceMappingURL=product-details.css.map */

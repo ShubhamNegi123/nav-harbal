@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+$primary-color: #da8f87;
+$secondary-color: #2a353a;
+
+* {
+    font-family: "Karla", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1,h2,h3{
+        
+        font-family: 'Abril Fatface', cursive;
+    }
+}
+
+header {
+    position: relative;
+    background-color: #fff;
+    .header-logo {
+        img {
+            width: 100%;
+        }
+    }
+    nav {
+        ul {
+            margin-bottom: 0px;
+            li {
+                a {
+                    display: block;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: #000;
+                    i {
+                        color: #000;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .catogery {
+                position: relative;
+                &:hover {
+                    .shop-by-catogery {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 50px;
+    background-color: $secondary-color;
+    color: #fff;
+    h2 {
+        font-size: 26px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    .footer-img1,
+    .footer-img2 {
+        img {
+            width: 100%;
+        }
+    }
+    h3 {
+        margin-left: 100px;
+    }
+    .footer-nav {
+        margin-left: 100px;
+        ul {
+            padding-left: 0px;
+            li {
+                text-align: left;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.footer-newslatter {
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    input {
+        width: 70%;
+        height: 40px;
+        padding-left: 10px;
+        color: #000;
+    }
+    a {
+        background-color: $primary-color;
+        padding: 10px;
+        color: #fff;
+    }
+    .footer-icons {
+        margin-top: 25px;
+        i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.shop-by-catogery {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 160px;
+    z-index: 99;
+    width: 100%;
+    background-color: #eee;
+    overflow: hidden;
+    .sub-catogery {
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        border-right: 1px solid #000;
+        height: 700px;
+        li {
+            text-align: left;
+            margin-bottom: 5px;
+            a {
+                transition: all.3s ease;
+                display: block;
+                color: $secondary-color;
+                &:hover {
+                    transition: all.3s ease;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        /* hover game */
+        .immune,
+        .sex,
+        .joint-pain,
+        .weight-loss,
+        .hair-growth,
+        .addiction,
+        .others {
+            i {
+                font-size: 10px;
+                padding-left: 5px;
+            }
+            .fa-chevron-down {
+                display: none;
+            }
+            &:hover {
+                .fa-chevron-right {
+                    display: none;
+                }
+                .fa-chevron-down {
+                    display: inline-block;
+                }
+                transition: all 0.3s ease;
+                .deep-catogery {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 10px;
+                }
+            }
+        }
+        .sex {
+            &:hover {
+                .deep-catogery {
+                    top: 45px;
+                }
+            }
+        }
+
+        .joint-pain {
+            &:hover {
+                .deep-catogery {
+                    top: 75px;
+                }
+            }
+        }
+        .weight-loss {
+            &:hover {
+                .deep-catogery {
+                    top: 105px;
+                }
+            }
+        }
+        .hair-growth {
+            &:hover {
+                .deep-catogery {
+                    top: 130px;
+                }
+            }
+        }
+        .addiction {
+            &:hover {
+                .deep-catogery {
+                    top: 160px;
+                }
+            }
+        }
+        .others {
+            &:hover {
+                .deep-catogery {
+                    top: 190px;
+                }
+            }
+        }
+
+        .deep-catogery {
+            visibility: hidden;
+            opacity: 0;
+            width: 100%;
+            border: 1px solid #eee;
+            position: absolute;
+            text-align: left;
+            top: -100px;
+            transition: all 0.3s ease;
+            left: 100%;
+            li {
+                margin-bottom: 5px;
+                a {
+                    color: $secondary-color;
+                    transition: all.3s ease;
+                    &:hover {
+                        transition: all.3s ease;
+                        text-decoration: underline;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1400px){
+    .shop-by-catogery{
+        top: 145px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .shop-by-catogery{
+        top: 130px;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .shop-by-catogery{
+        top: 110px;
+    }
+}

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* h1, * h2, * h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form-and-location {
+  border-top: 1px solid #eee;
+  margin-top: 100px;
+}
+
+.form-and-location form {
+  margin-bottom: 50px;
+}
+
+.form-and-location form label {
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #2a353a;
+}
+
+.form-and-location form label i {
+  font-size: 8px;
+  color: #2a353a;
+}
+
+.form-and-location form input {
+  border-radius: 20px;
+  border: 2px solid #eee;
+  height: 40px;
+  display: inline-block;
+  width: 100%;
+  background-color: #eee;
+}
+
+.form-and-location form textarea {
+  background-color: #eee;
+  height: 100px;
+  width: 100%;
+  border-radius: 40px;
+  border: 2px solid #eee;
+  resize: none;
+}
+
+.form-and-location form button {
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+  background-color: #2a353a;
+}
+
+.form-and-location form button:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #da8f87;
+}
+
+.form-and-location .map {
+  width: 100%;
+  height: 100%;
+}
+
+.form-and-location .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 568px) {
+  .contact-banner img {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+/*# sourceMappingURL=contact-us.css.map */

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* h1, * h2, * h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.all-product {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.all-product h1 {
+  margin-bottom: 50px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: relative;
+}
+
+.all-product .product-card h4 {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.all-product .product-card span {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.all-product .product-card span::after {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 104px;
+  content: "";
+  height: 2px;
+  background-color: #da8f87;
+}
+
+.all-product .product-card span i {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.all-product .product-card .add-to-card-button {
+  display: block;
+  padding: 5px 0px;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.all-product .product-card .add-to-card-button::after {
+  display: none;
+}
+
+.all-product .product-card .add-to-card-button:hover {
+  border-radius: 0px;
+  background-color: #da8f87;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #fff;
+}
+
+.all-product .product-card .img-wrapper {
+  position: relative;
+}
+
+.all-product .product-card .img-wrapper img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.all-product .product-card .img-wrapper .img1 {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.all-product .product-card .img-wrapper .img2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.all-product .product-card:hover .img-wrapper .img2 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.all-product .product-card:hover .img-wrapper .img1 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.all-product .see-all-product {
+  margin-top: 50px;
+}
+
+.all-product .see-all-product a {
+  padding: 10px;
+  background-color: #da8f87;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.all-product .see-all-product a:hover {
+  background-color: #2a353a;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=all-products.css.map */

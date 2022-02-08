@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+$primary-color: #da8f87;
+$secondary-color: #2a353a;
+
+* {
+    font-family: "Karla", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1,h2,h3{
+        
+        font-family: 'Abril Fatface', cursive;
+    }
+}
+
+//  header ends here
+
+.all-products {
+
+    position: relative;
+    margin-top: 120px;
+    padding-bottom: 50px;
+    .product-sidebr{
+        img{
+            cursor: pointer;
+            border: 1px solid rgb(126, 112, 112);
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 100px;        
+        font-size: 40px;
+        font-weight: 600;
+        font-family: "Quicksand", sans-serif;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100px;
+            height: 2px;
+            background-color: $primary-color;
+            content: '';
+        }
+    }
+    .products-img-wrapper {
+        // position: fixed;
+        // border: 1px solid #000;
+        // top: 300px;
+        margin: 0 auto;
+        border-radius: 20px;
+        overflow: hidden;
+        border-radius: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    h3 {            
+        margin-top: 20px;               
+        font-size: 16px;
+        font-weight: 600;
+    }
+    p {                        
+        // padding: 0px 10px;
+        font-size: 14px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .product-details{
+        .product-name{
+            font-size: 20px;
+        }
+        .rating{
+            i{
+                color: $secondary-color;
+            }
+            span{
+                margin-left: 10px;
+            }
+        }
+        table{
+            margin: 30px 0px;
+            tr{
+               td{
+                   padding-right: 40px;
+                   padding-bottom: 5px;
+               }                
+            }
+        }
+        .add-to-card-button,.wishlist-button{
+            cursor: pointer;
+            background-color: $secondary-color;
+            padding: 10px 50px;
+            font-weight: 500;
+            color: #fff;
+            display: inline-block;
+            margin-right: 30px;            
+        }
+        .order-now-button{
+            cursor: pointer;
+            background-color: $secondary-color;
+            padding: 10px 180px;
+            margin-top: 30px;
+            font-weight: 500;
+            color: #fff;
+            display: inline-block;
+            margin-right: 30px;            
+        }
+        .read-more{
+            padding: 20px;
+            background-color: #eee;
+            margin-top: 50px;
+            span{
+                text-transform: uppercase;
+                color: $secondary-color;
+                display: inline-block;
+                cursor: pointer;
+            }
+            i{                
+                padding-left: 10px;
+            }
+            .all-about-product{
+                display: none;
+                margin-top: 50px;
+                h2,h3{            
+                    font-size: 20px; 
+                    font-weight: bold;
+                }
+                ol{
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                    li{
+                        padding-left: 5px;
+                        margin-bottom: 3px;
+                    }
+                }
+               
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+
+// footer ends here
