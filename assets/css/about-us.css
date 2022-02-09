@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* h1,
+* h2,
+* h3 {
+  font-family: "Abril Fatface", cursive;
+}
+
+.about-us {
+  margin-top: 100px;
+}
+
+.about-us h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2a353a;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.about-us p {
+  color: #736262;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.about-us .about-card {
+  margin-top: 50px;
+}
+
+.about-us .about-card i {
+  font-size: 50px;
+  color: #9d58dd;
+}
+
+.about-us .about-card h2 {
+  margin: 20px 0px;
+  font-family: serif;
+  color: #2a353a;
+  word-spacing: 4px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.about-us .about-card p {
+  line-height: 25px;
+  text-align: left;
+}
+
+.mission-and-vision {
+  border: 1px solid #000;
+}
+/*# sourceMappingURL=about-us.css.map */

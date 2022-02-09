@@ -50,7 +50,7 @@
   width: 104px;
   content: "";
   height: 2px;
-  background-color: #da8f87;
+  background-color: #86b789;
 }
 
 .all-product .product-card span i {
@@ -75,7 +75,7 @@
 
 .all-product .product-card .add-to-card-button:hover {
   border-radius: 0px;
-  background-color: #da8f87;
+  background-color: #86b789;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   color: #fff;
@@ -87,7 +87,6 @@
 
 .all-product .product-card .img-wrapper img {
   width: 100%;
-  max-height: 400px;
 }
 
 .all-product .product-card .img-wrapper .img1 {
@@ -125,7 +124,7 @@
 
 .all-product .see-all-product a {
   padding: 10px;
-  background-color: #da8f87;
+  background-color: #86b789;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;

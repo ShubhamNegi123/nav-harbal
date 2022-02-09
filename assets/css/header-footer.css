@@ -52,24 +52,16 @@ header nav ul .catogery:hover .shop-by-catogery {
 }
 
 footer {
+  position: relative;
+  margin-top: -10px;
   padding: 50px;
   background-color: #2a353a;
   color: #fff;
 }
 
-footer h2 {
-  font-size: 26px;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
 footer .footer-img1 img,
 footer .footer-img2 img {
   width: 100%;
-}
-
-footer h3 {
-  margin-left: 100px;
 }
 
 footer .footer-nav {
@@ -88,8 +80,39 @@ footer .footer-nav ul li a {
   color: #fff;
 }
 
+.footer-details h2,
+.footer-nav h2,
+.social-links h2,
 .footer-newslatter h2 {
-  font-size: 24px;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: serif;
+  font-weight: 700;
+}
+
+.footer-nav ul, .social-links ul {
+  padding-left: 0px;
+}
+
+.footer-nav ul li, .social-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-nav ul li a, .social-links ul li a {
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer-nav ul li a:hover, .social-links ul li a:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #86b789;
+}
+
+.footer-newslatter h2 {
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -102,7 +125,7 @@ footer .footer-nav ul li a {
 }
 
 .footer-newslatter a {
-  background-color: #da8f87;
+  background-color: #86b789;
   padding: 10px;
   color: #fff;
 }
@@ -112,8 +135,24 @@ footer .footer-nav ul li a {
 }
 
 .footer-newslatter .footer-icons i {
+  color: #fff;
   margin-right: 15px;
   font-size: 20px;
+}
+
+.footer-icons {
+  cursor: pointer;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  opacity: 0.5;
+}
+
+.watermark a {
+  color: #fff;
 }
 
 .shop-by-catogery {
@@ -152,7 +191,7 @@ footer .footer-nav ul li a {
 .shop-by-catogery .sub-catogery li a:hover {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #da8f87;
+  color: #86b789;
 }
 
 .shop-by-catogery .sub-catogery .immune i,
@@ -270,7 +309,7 @@ footer .footer-nav ul li a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-decoration: underline;
-  color: #da8f87;
+  color: #86b789;
 }
 
 @media only screen and (max-width: 1400px) {

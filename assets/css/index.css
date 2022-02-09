@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
 * {
   font-family: "Karla", sans-serif;
   margin: 0px;
@@ -16,7 +18,7 @@
 * h1,
 * h2,
 * h3 {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Oleo Script", cursive;
 }
 
 header {
@@ -105,6 +107,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   color: #2a353a;
   font-size: 35px;
   letter-spacing: 1px;
+  font-family: serif;
   font-weight: 700;
 }
 
@@ -150,20 +153,22 @@ header nav ul .catogery:hover .shop-by-catogery {
 }
 
 .today-product .today-product-details h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: serif;
   color: #2a353a;
   word-spacing: 4px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .today-product .today-product-details span {
   display: block;
   margin-bottom: 15px;
+  font-weight: bold;
   font-size: 20px;
 }
 
 .today-product .today-product-details span i {
+  font-weight: bold;
   font-size: 16px;
   font-weight: 300;
 }
@@ -173,7 +178,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   letter-spacing: 1px;
   color: #fff;
   display: block;
-  background-color: #da8f87;
+  background-color: #86b789;
   padding: 10px 0px;
   text-align: center;
   -webkit-transition: all 0.3s ease;
@@ -192,7 +197,7 @@ header nav ul .catogery:hover .shop-by-catogery {
 }
 
 .today-product .today-product-details .active {
-  border: 1px solid #da8f87;
+  border: 1px solid #86b789;
 }
 
 .all-product {
@@ -202,10 +207,11 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .all-product h3 {
   margin-bottom: 80px;
+  color: #2a353a;
   font-size: 35px;
   letter-spacing: 1px;
+  font-family: serif;
   font-weight: 700;
-  position: relative;
 }
 
 .all-product .product-card h4 {
@@ -230,7 +236,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   width: 104px;
   content: "";
   height: 2px;
-  background-color: #da8f87;
+  background-color: #86b789;
 }
 
 .all-product .product-card span i {
@@ -278,8 +284,9 @@ header nav ul .catogery:hover .shop-by-catogery {
   transition: all 0.5s ease;
 }
 
-.all-product .product-card:hover span, .all-product .product-card:hover h4 {
-  color: #0a58ca;
+.all-product .product-card:hover span,
+.all-product .product-card:hover h4 {
+  color: #969100;
 }
 
 .all-product .see-all-product {
@@ -288,7 +295,7 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .all-product .see-all-product a {
   padding: 10px;
-  background-color: #da8f87;
+  background-color: #86b789;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -314,6 +321,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   color: #2a353a;
   font-size: 35px;
   letter-spacing: 1px;
+  font-family: serif;
   font-weight: 700;
 }
 
@@ -330,9 +338,9 @@ header nav ul .catogery:hover .shop-by-catogery {
   color: #2a353a;
   font-size: 35px;
   letter-spacing: 1px;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+  font-family: serif;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .shopping-catogery1 .catogery {
@@ -347,7 +355,6 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .shopping-catogery1 .catogery .img-wrapper img {
   width: 100%;
-  height: 220px;
   overflow: hidden;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -421,7 +428,7 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .shopping-catogery2 {
   padding: 80px 0;
-  background-color: #497BC2;
+  background-color: #497bc2;
   background-color: #eee;
 }
 
@@ -435,7 +442,6 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .shopping-catogery2 .catogery .img-wrapper img {
   width: 100%;
-  height: 200px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -500,7 +506,7 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .logs {
   padding: 50px 0px;
-  background-color: #da8f87;
+  background-color: #86b789;
   font-family: "Cinzel", serif;
 }
 
@@ -543,12 +549,13 @@ header nav ul .catogery:hover .shop-by-catogery {
 }
 
 .testimonials h2 {
+  margin-bottom: 80px;
   color: #2a353a;
   font-size: 35px;
   letter-spacing: 1px;
-  letter-spacing: 1px;
-  margin-bottom: 50px;
+  font-family: serif;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .testimonials .customer-card {
@@ -558,15 +565,15 @@ header nav ul .catogery:hover .shop-by-catogery {
 
 .testimonials .customer-card:hover .type::after {
   width: 100%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .testimonials .customer-card:hover i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .testimonials .customer-card .type {
@@ -574,15 +581,15 @@ header nav ul .catogery:hover .shop-by-catogery {
 }
 
 .testimonials .customer-card .type::after {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 0%;
   height: 2px;
-  content: '';
-  background-color: #da8f87;
+  content: "";
+  background-color: #86b789;
 }
 
 .testimonials .customer-card i {
@@ -605,14 +612,16 @@ header nav ul .catogery:hover .shop-by-catogery {
 }
 
 .testimonials .customer-card .designation {
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.testimonials .owl-carousel .owl-dots.disabled, .testimonials .owl-carousel .owl-nav.disabled {
+.testimonials .owl-carousel .owl-dots.disabled,
+.testimonials .owl-carousel .owl-nav.disabled {
   display: block;
 }
 
-.testimonials .owl-next span, .testimonials .owl-prev span {
+.testimonials .owl-next span,
+.testimonials .owl-prev span {
   display: none;
 }
 
@@ -675,19 +684,9 @@ footer {
   color: #fff;
 }
 
-footer h2 {
-  font-size: 26px;
-  letter-spacing: 3px;
-  font-weight: 700;
-}
-
 footer .footer-img1 img,
 footer .footer-img2 img {
   width: 100%;
-}
-
-footer h3 {
-  margin-left: 100px;
 }
 
 footer .footer-nav {
@@ -706,8 +705,39 @@ footer .footer-nav ul li a {
   color: #fff;
 }
 
+.footer-details h2,
+.footer-nav h2,
+.social-links h2,
 .footer-newslatter h2 {
-  font-size: 24px;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: serif;
+  font-weight: 700;
+}
+
+.footer-nav ul, .social-links ul {
+  padding-left: 0px;
+}
+
+.footer-nav ul li, .social-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-nav ul li a, .social-links ul li a {
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer-nav ul li a:hover, .social-links ul li a:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #86b789;
+}
+
+.footer-newslatter h2 {
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -720,7 +750,7 @@ footer .footer-nav ul li a {
 }
 
 .footer-newslatter a {
-  background-color: #da8f87;
+  background-color: #86b789;
   padding: 10px;
   color: #fff;
 }
@@ -730,15 +760,20 @@ footer .footer-nav ul li a {
 }
 
 .footer-newslatter .footer-icons i {
+  color: #fff;
   margin-right: 15px;
   font-size: 20px;
+}
+
+.footer-icons {
+  cursor: pointer;
 }
 
 .watermark {
   position: absolute;
   bottom: 10px;
   left: 5%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .watermark a {
@@ -789,16 +824,17 @@ footer .footer-nav ul li a {
         }
     }
 }*/
+@media only screen and (max-width: 1600px) {
+  .home-banner .banner1 a {
+    bottom: 100px;
+    right: 350px;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .home-banner .banner1 a {
     bottom: 70px;
     right: 300px;
-  }
-}
-
-@media only screen and (max-width: 2000px) {
-  .shopping-catogery1 .catogery .img-wrapper img {
-    max-height: 250px;
   }
 }
 /*# sourceMappingURL=index.css.map */

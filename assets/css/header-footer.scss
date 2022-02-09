@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-$primary-color: #da8f87;
+$primary-color: #86b789;
 $secondary-color: #2a353a;
 
 * {
@@ -56,22 +56,17 @@ header {
 }
 
 footer {
+    position: relative;
+    margin-top: -10px;
     padding: 50px;
     background-color: $secondary-color;
     color: #fff;
-    h2 {
-        font-size: 26px;
-        letter-spacing: 3px;
-        font-weight: 700;
-    }
+
     .footer-img1,
     .footer-img2 {
         img {
             width: 100%;
         }
-    }
-    h3 {
-        margin-left: 100px;
     }
     .footer-nav {
         margin-left: 100px;
@@ -86,10 +81,37 @@ footer {
         }
     }
 }
-
+.footer-details,
+.footer-nav,
+.social-links,
 .footer-newslatter {
     h2 {
-        font-size: 24px;
+        color: #fff;
+        font-size: 35px;
+        letter-spacing: 1px;
+        font-family: serif;
+        font-weight: 700;
+    }
+}
+.footer-nav,.social-links{
+    ul {
+        padding-left: 0px;
+        li{
+            margin-bottom: 5px;
+            a{
+                color: #fff;
+                transition: all .3s ease;
+                &:hover{
+                    transition: all .3s ease;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+.footer-newslatter {
+    h2 {
+        font-size: 26px;
         font-weight: 700;
         margin-bottom: 25px;
     }
@@ -107,9 +129,22 @@ footer {
     .footer-icons {
         margin-top: 25px;
         i {
+            color:#fff;
             margin-right: 15px;
             font-size: 20px;
         }
+    }
+}
+.footer-icons{
+    cursor: pointer;
+}
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    opacity: 0.5;
+    a {
+        color: #fff;
     }
 }
 
