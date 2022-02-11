@@ -47,6 +47,11 @@ $secondary-color: #2a353a;
                 height: 2px;
                 background-color: $primary-color;
             }
+            span{
+                &::after {
+                    display: none;
+                } 
+            }
             i {
                 font-size: 12px;
                 font-weight: 300;

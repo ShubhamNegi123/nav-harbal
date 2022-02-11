@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 $primary-color: #86b789;
 $secondary-color: #2a353a;
-$text-color:#736262;;
+$text-color: #736262;
 * {
     font-family: "Karla", sans-serif;
     margin: 0px;
@@ -16,9 +15,11 @@ $text-color:#736262;;
     h1,
     h2,
     h3 {
-        font-family: "Abril Fatface", cursive;
+        font-family: serif;
     }
 }
+
+
 
 .about-us {
     margin-top: 100px;
@@ -30,18 +31,18 @@ $text-color:#736262;;
         letter-spacing: 1px;
         font-weight: 700;
     }
-    p{
+    p {
         color: $text-color;
         line-height: 30px;
         text-align: justify;
     }
-    .about-card{
+    .about-card {
         margin-top: 50px;
-        i{
+        i {
             font-size: 50px;
             color: rgb(157, 88, 221);
         }
-        h2{
+        h2 {
             margin: 20px 0px;
             font-family: serif;
             color: $secondary-color;
@@ -49,13 +50,90 @@ $text-color:#736262;;
             font-weight: 700;
             font-size: 25px;
         }
-        p{
+        p {
             line-height: 25px;
             text-align: left;
         }
     }
 }
 
-.mission-and-vision{
-    border: 1px solid #000;
+.mission-and-vision {
+    margin-top: 50px;
+    padding: 100px 0px;
+    background-color: #eee;
+    transition: all 0.3s ease;
+    h2 {
+        text-align: center;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        color: $text-color;
+    }
+    .mission-card {
+        background-color: #fff;
+        padding: 20px;
+        i {
+            padding-left: 20px;
+            color: rgb(157, 88, 221);
+            font-size: 40px;
+            font-weight: 100;
+        }
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-family: serif;
+            padding-left: 20px;
+        }
+        ul {
+            margin-bottom: 20px;
+            list-style: disc;
+            li {
+                color: $text-color;
+                margin-bottom: 10px;
+            }
+        }
+        &:hover {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 40px rgba(51, 51, 51, 0.2);
+        }
+    }
+}
+
+.director-message {
+    .director-img {
+        img {
+            width: 100%;
+        }
+    }
+    .d-message {
+        .number {
+            font-size: 100px;
+            color: rgb(157, 88, 221);
+        }
+        p {
+            margin-left: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color: $primary-color;
+            display: inline-block;
+        }
+        h3 {
+            color: $secondary-color;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-family: serif;
+            font-weight: 700;
+        }
+        .dm{
+            text-align: justify;
+            color: $secondary-color;
+            font-size: 16px; 
+            color: $text-color; 
+            font-weight: normal;
+            line-height: 30px;      
+        }
+    }
 }

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+
+$primary-color: #86b789;
+$secondary-color: #2a353a;
+
+
+
+.all-products {
+    margin-top: 120px;
+    padding-bottom: 50px;    
+    h1 {
+        text-align: center;       
+        font-size: 40px;
+        font-weight: 600;
+        font-family: "Quicksand", sans-serif;
+        position: relative;
+        &::after{
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100px;
+            height: 2px;
+            background-color: $primary-color;
+            content: '';
+        }
+    }
+    .product-card{
+        text-align: center;
+        margin-top: 80px;
+        
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .products-img-wrapper{
+            img{
+                width: 50%;
+            }
+        }
+        .remove-from-wishlist{
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            padding: 3px 20px;
+            background-color: $secondary-color;
+            transition: all .4s ease;
+            border-radius: 20px;
+            &:hover{
+                transition: all .4s ease;
+                background-color: $secondary-color;
+            }
+        }
+    }
+    
+}
+

@@ -55,6 +55,24 @@ header nav ul .catogery:hover .shop-by-catogery {
   display: block;
 }
 
+header .add-to-cart-icon, header .add-to-bag-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+}
+
+header .add-to-cart-icon img, header .add-to-bag-icon img {
+  width: 30px;
+}
+
+header .add-to-cart-icon span, header .add-to-bag-icon span {
+  margin-left: 5px;
+}
+
+header .add-to-bag-icon {
+  right: 5%;
+}
+
 .home-banner .banner1 {
   position: relative;
 }
@@ -173,7 +191,8 @@ header nav ul .catogery:hover .shop-by-catogery {
   font-weight: 300;
 }
 
-.today-product .today-product-details a {
+.today-product .today-product-details .add-to-card-button {
+  cursor: pointer;
   font-size: 14px;
   letter-spacing: 1px;
   color: #fff;
@@ -185,7 +204,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   transition: all 0.3s ease;
 }
 
-.today-product .today-product-details a:hover {
+.today-product .today-product-details .add-to-card-button:hover {
   background-color: #2a353a;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -334,6 +353,11 @@ header nav ul .catogery:hover .shop-by-catogery {
   background-color: #eee;
 }
 
+.shopping-catogery1 a {
+  display: block;
+  border: 1px solid #b4a9a9;
+}
+
 .shopping-catogery1 h2 {
   color: #2a353a;
   font-size: 35px;
@@ -360,7 +384,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   transition: all 0.4s ease;
 }
 
-.shopping-catogery1 .catogery a {
+.shopping-catogery1 .catogery span {
   position: absolute;
   z-index: 99;
   font-size: 24px;
@@ -369,7 +393,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   color: #fff;
 }
 
-.shopping-catogery1 .catogery a::after {
+.shopping-catogery1 .catogery span::after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: absolute;
@@ -402,7 +426,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.shopping-catogery1 .catogery:hover a::after {
+.shopping-catogery1 .catogery:hover span::after {
   width: 100%;
 }
 
@@ -411,11 +435,6 @@ header nav ul .catogery:hover .shop-by-catogery {
   transition: all 0.3s ease;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
-}
-
-.shopping-catogery1 .catogery4 a {
-  top: 40%;
-  left: 30%;
 }
 
 .quotes {
@@ -432,12 +451,13 @@ header nav ul .catogery:hover .shop-by-catogery {
   background-color: #eee;
 }
 
-.shopping-catogery2 .catogery {
-  position: relative;
+.shopping-catogery2 a {
+  display: block;
+  border: 1px solid #b4a9a9;
 }
 
-.shopping-catogery2 .catogery .img-wrapper {
-  border: 1px solid #b4a9a9;
+.shopping-catogery2 .catogery {
+  position: relative;
 }
 
 .shopping-catogery2 .catogery .img-wrapper img {
@@ -446,7 +466,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   transition: all 0.3s ease;
 }
 
-.shopping-catogery2 .catogery a {
+.shopping-catogery2 .catogery span {
   position: absolute;
   z-index: 99;
   font-size: 24px;
@@ -455,7 +475,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   color: #fff;
 }
 
-.shopping-catogery2 .catogery a::after {
+.shopping-catogery2 .catogery span::after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: absolute;
@@ -488,7 +508,7 @@ header nav ul .catogery:hover .shop-by-catogery {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.shopping-catogery2 .catogery:hover a::after {
+.shopping-catogery2 .catogery:hover span::after {
   width: 100%;
 }
 

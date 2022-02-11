@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 $primary-color: #86b789;
 $secondary-color: #2a353a;
@@ -13,9 +13,10 @@ $secondary-color: #2a353a;
     a {
         text-decoration: none;
     }
-    h1,h2,h3{
-        
-        font-family: 'Abril Fatface', cursive;
+    h1,
+    h2,
+    h3 {
+        font-family: "Abril Fatface", cursive;
     }
 }
 
@@ -53,6 +54,22 @@ header {
             }
         }
     }
+    .add-to-cart-icon,.add-to-bag-icon{
+        position: absolute;       
+        bottom: 10px;
+        right: 10%;
+        img{
+            cursor: pointer;
+            width: 30px;
+        }
+        span{
+            cursor: pointer;
+            margin-left: 5px;
+        }
+    }
+    .add-to-bag-icon{
+        right: 5%;
+    }
 }
 
 footer {
@@ -80,71 +97,73 @@ footer {
             }
         }
     }
-}
-.footer-details,
-.footer-nav,
-.social-links,
-.footer-newslatter {
-    h2 {
-        color: #fff;
-        font-size: 35px;
-        letter-spacing: 1px;
-        font-family: serif;
-        font-weight: 700;
+
+    .footer-details,
+    .footer-nav,
+    .social-links,
+    .footer-newslatter {
+        h2 {
+            color: #fff;
+            font-size: 35px;
+            letter-spacing: 1px;
+            font-family: serif;
+            font-weight: 700;
+        }
     }
-}
-.footer-nav,.social-links{
-    ul {
-        padding-left: 0px;
-        li{
-            margin-bottom: 5px;
-            a{
-                color: #fff;
-                transition: all .3s ease;
-                &:hover{
-                    transition: all .3s ease;
-                    color: $primary-color;
+    .footer-nav,
+    .social-links {
+        ul {
+            padding-left: 0px;
+            li {
+                margin-bottom: 5px;
+                a {
+                    color: #fff;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        transition: all 0.3s ease;
+                        color: $primary-color;
+                    }
                 }
             }
         }
     }
-}
-.footer-newslatter {
-    h2 {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 25px;
-    }
-    input {
-        width: 70%;
-        height: 40px;
-        padding-left: 10px;
-        color: #000;
-    }
-    a {
-        background-color: $primary-color;
-        padding: 10px;
-        color: #fff;
-    }
-    .footer-icons {
-        margin-top: 25px;
-        i {
-            color:#fff;
-            margin-right: 15px;
-            font-size: 20px;
+    .footer-newslatter {
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        input {
+            width: 70%;
+            height: 40px;
+            padding-left: 10px;
+            color: #000;
+        }
+        a {
+            background-color: $primary-color;
+            padding: 10px;
+            color: #fff;
+        }
+        .footer-icons {
+            margin-top: 25px;
+            i {
+                color: #fff;
+                margin-right: 15px;
+                font-size: 20px;
+            }
         }
     }
-}
-.footer-icons{
-    cursor: pointer;
-}
-.watermark {
-    position: absolute;
-    bottom: 10px;
-    left: 5%;
-    opacity: 0.5;
-    a {
-        color: #fff;
+    .footer-icons {
+        cursor: pointer;
+    }
+    .watermark {
+        position: absolute;
+        bottom: 10px;
+        left: 5%;
+        opacity: 0.5;
+        a {
+            color: #fff;
+        }
     }
 }
 
@@ -174,6 +193,7 @@ footer {
                 &:hover {
                     transition: all.3s ease;
                     color: $primary-color;
+                    text-decoration: underline;
                 }
             }
         }
@@ -219,28 +239,28 @@ footer {
         .joint-pain {
             &:hover {
                 .deep-catogery {
-                    top: 75px;
+                    top: 85px;
                 }
             }
         }
         .weight-loss {
             &:hover {
                 .deep-catogery {
-                    top: 105px;
+                    top: 120px;
                 }
             }
         }
         .hair-growth {
             &:hover {
                 .deep-catogery {
-                    top: 130px;
+                    top: 150px;
                 }
             }
         }
         .addiction {
             &:hover {
                 .deep-catogery {
-                    top: 160px;
+                    top: 190px;
                 }
             }
         }
@@ -278,21 +298,35 @@ footer {
     }
 }
 
+.message{
+    position: fixed;
+    z-index: 99999;
+    background-color: $secondary-color;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    padding: 5px 30px;
+    border-radius: 5px;
+    top: 0px;
+    left: 50%;
+    transition: all .3s ease;
+    transform: translate(-50%);
+}
 
-@media only screen and (max-width:1400px){
-    .shop-by-catogery{
+@media only screen and (max-width: 1400px) {
+    .shop-by-catogery {
         top: 145px;
     }
 }
 
-@media only screen and (max-width:1200px){
-    .shop-by-catogery{
+@media only screen and (max-width: 1200px) {
+    .shop-by-catogery {
         top: 130px;
     }
 }
 
-@media only screen and (max-width:991px){
-    .shop-by-catogery{
+@media only screen and (max-width: 991px) {
+    .shop-by-catogery {
         top: 110px;
     }
 }

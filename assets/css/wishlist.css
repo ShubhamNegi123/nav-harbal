@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+.all-products {
+  margin-top: 120px;
+  padding-bottom: 50px;
+}
+
+.all-products h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+}
+
+.all-products h1::after {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: #86b789;
+  content: '';
+}
+
+.all-products .product-card {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.all-products .product-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.all-products .product-card .products-img-wrapper img {
+  width: 50%;
+}
+
+.all-products .product-card .remove-from-wishlist {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  padding: 3px 20px;
+  background-color: #2a353a;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border-radius: 20px;
+}
+
+.all-products .product-card .remove-from-wishlist:hover {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  background-color: #2a353a;
+}
+/*# sourceMappingURL=wishlist.css.map */

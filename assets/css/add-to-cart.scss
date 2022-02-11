@@ -1,0 +1,158 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+
+$primary-color: #86b789;
+$secondary-color: #2a353a;
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    ul {
+        list-style: none;
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Quicksand", sans-serif;
+    }
+}
+
+
+
+.add-to-card{
+    margin: 150px 0px 100px 0px;
+    h2{
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 20px;
+        font-size: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .cross-button{
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        i{
+            padding: 5px;
+            font-size: 28px;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+    }
+    .remove-from-card{
+        position: absolute;            
+        bottom:10px;
+        right: 10px;
+        i{
+            padding: 5px;
+            cursor: pointer;
+            font-size: 30px;
+            opacity: .8;
+        }
+    }   
+    .cart-sidebar{
+        p{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    } 
+    .card{
+        margin-top: 50px;
+        position: relative;
+        border: none;
+        border-bottom: 5px solid #eee;
+        margin-bottom: 30px;
+        .product-img{
+            img{
+                width: 200px;
+            }
+        }
+        .details{
+            margin-left: 30px;
+            .name{
+                display: inline-block;
+                text-align: left;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .number-of-product{
+                border: 1px solid #000;
+                width: 50px;
+                border: none;
+                text-align: center;
+            }
+            .decrease,.increase{
+                border: 1px solid #eee;
+                padding:5px 10px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            p{
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            .order-now-button{
+                background-color: $secondary-color;
+                color: #fff;                
+                padding: 5px 20px;
+                border-radius: 20px;
+                transition: all .3s ease;
+                &:hover{
+                    transition: all .3s ease;
+                    background-color: $primary-color;
+                }
+            }
+        }        
+    }
+    .sub-total{
+        span{
+            margin-left: 20px;
+            font-size: 18px;
+            
+        }
+        .sub-total-amount{
+            margin-right: 20px;
+        }
+    }
+    .checkout-button{
+        margin-top: 20px;
+        text-align: center;
+        a{
+            padding: 8px 50px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            background-color: $secondary-color;
+            color: #fff;
+            transition: all .3s ease;
+            &:hover{
+                background-color: $primary-color;
+                transition: all .3s ease;
+            }
+        }
+    }
+    
+}

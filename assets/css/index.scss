@@ -58,6 +58,20 @@ header {
             }
         }
     }
+    .add-to-cart-icon,.add-to-bag-icon{
+        position: absolute;       
+        bottom: 10px;
+        right: 10%;
+        img{
+            width: 30px;
+        }
+        span{
+            margin-left: 5px;
+        }
+    }
+    .add-to-bag-icon{
+        right: 5%;
+    }
 }
 
 .home-banner {
@@ -156,7 +170,8 @@ header {
                 font-weight: 300;
             }
         }
-        a {
+        .add-to-card-button{
+            cursor: pointer;
             font-size: 14px;
             letter-spacing: 1px;
             color: #fff;
@@ -295,6 +310,10 @@ header {
 .shopping-catogery1 {
     padding: 50px 0;
     background-color: #eee;
+    a{
+        display: block;
+        border: 1px solid rgb(180, 169, 169);
+    }
     h2 {
         color: $secondary-color;
         font-size: 35px;
@@ -315,7 +334,7 @@ header {
             }
         }
 
-        a {
+        span {
             position: absolute;
             z-index: 99;
             font-size: 24px;
@@ -348,7 +367,7 @@ header {
             &::after {
                 background-color: rgba(0, 0, 0, 0.5);
             }
-            a {
+            span {
                 &::after {
                     width: 100%;
                 }
@@ -359,12 +378,7 @@ header {
             }
         }
     }
-    .catogery4 {
-        a {
-            top: 40%;
-            left: 30%;
-        }
-    }
+    
 }
 
 .quotes {
@@ -376,21 +390,24 @@ header {
     }
 }
 
-.shopping-catogery2 {
+.shopping-catogery2 {    
     padding: 80px 0;
     background-color: #497bc2;
     background-color: #eee;
+    a{
+        display: block;        
+        border: 1px solid rgb(180, 169, 169);
+    }
     .catogery {
         position: relative;
         .img-wrapper {
-            border: 1px solid rgb(180, 169, 169);
             img {
                 width: 100%;
                 transition: all 0.3s ease;
             }
         }
 
-        a {
+        span {
             position: absolute;
             z-index: 99;
             font-size: 24px;
@@ -423,7 +440,7 @@ header {
             &::after {
                 background-color: rgba(0, 0, 0, 0.5);
             }
-            a {
+            span {
                 &::after {
                     width: 100%;
                 }

@@ -53,6 +53,10 @@
   background-color: #86b789;
 }
 
+.all-product .product-card span span::after {
+  display: none;
+}
+
 .all-product .product-card span i {
   font-size: 12px;
   font-weight: 300;
