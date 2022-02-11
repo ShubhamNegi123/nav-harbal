@@ -1,22 +1,34 @@
 $(function () {
 
-
-
     
+    
+    /* normal functions for page 
+            |   
+            |
+            |
+            |
+           \ /
+            *
+    
+    */
+    $('.add-to-cart-icon').click(function(){
+        window.location.href = "add-to-cart.html";
+    });
+    $('.add-to-bag-icon').click(function(){
+        window.location.href = "add-to-wishlist.html";
+    });  
 
     // function for showing sidebar image on main image wrapper
-    let image = $('.products-img-wrapper .products-img img').attr('src');
-    $('.all-products .product-sidebr .sidebar-img').mouseover(function () {
+    let image = $('.products-img img').attr('src');
+    $('.product-sidebr .sidebar-img').mouseover(function () {
         var src = $(this).attr('src');
         //console.log(src);
-        $('.products-img-wrapper .products-img img').attr('src', src);
+        $(' .products-img img').attr('src', src);
     });
-
 
     $('.all-products .product-sidebr .sidebar-img').mouseout(function () {
-        $('.products-img-wrapper .products-img img').attr('src', image);
+        $('.products-img img').attr('src', image);
     });
-
 
     //  function for showing product details
     $('.more-click').click(function () {       
@@ -32,33 +44,12 @@ $(function () {
     });
 
 
-    //  function for fixing main product image
-    $(window).scroll(function (event) {
-        var scroll = $(window).scrollTop();
-        //console.log(scroll);
-        if (scroll >= 255) {
-            $('.products-img-sticky-wrapper').css({
-                position: 'fixed',
-                top: '0px'
-            });
-        }
-        if (scroll < 255 || scroll > 450) {
-            $('.products-img-sticky-wrapper').css({
-                position: 'static'
-            });
-        }        
-    });
-    
 
-
-
-    //  getting product img
-    let productImg = $('.products-img img').attr('src');
-   // console.log($('.add-to-card-button ').parent().closest('img').attr('src'))
 
     
     // getting cart icon number value
-    let totalItemsIntoCart = $('.total-items-into-cart').text();
+    let totalItemsIntoCart = $('.add-to-cart-button-quantity').text();
+    console.log(`totalItemsIntoCart = ${totalItemsIntoCart}`);
     totalItemsIntoCart = parseInt(totalItemsIntoCart);
 
 
@@ -67,21 +58,26 @@ $(function () {
     let totalItemsquantityIntoCart = $('.quantity').text();
     totalItemsquantityIntoCart = parseInt(totalItemsquantityIntoCart);
 
+    $('.add-to-card-button').click(function () {
+        $('.message').text('Item added to the Cart');
+        $('.message').css({
+            opacity: '1',
+            visibility: 'visible',
+            top: '100px',
+            transition: 'all .3s ease'
+        });    
+        setTimeout(() => {
+            $('.message').css({
+                opacity: '0',
+                visibility: 'hidden',
+                top: '0px'
+            });  
+        }, 700);  
+    });
 
-    // getting product price
-    let productAmount = $('.price').text();
-    productAmount = parseFloat(productAmount);
 
-    //getting product name
-    let productName = $('.product-name b').text();
-    $('.name').text(productName);
-
-    //  getting product id
-    let id = $('.id').attr('id');
-    console.log(id);
-
-
-
+    let totalItemsIntowishlist = $('.add-to-bag-button-quantity').text();
+    totalItemsIntowishlist = parseInt(totalItemsIntowishlist);
 
     /* all functions for add to  cart 
             |   
@@ -92,19 +88,13 @@ $(function () {
             *
     
     */
-
-
     // function for add to cart button click
-    $('.add-to-card-button').click(function () {
-        addToCard(id, productName, productAmount, 1, productImg);
-        ShowingCart();
-    });
-
+    
     // showing cart
-    ShowingCart();
+    /* ShowingCart(); */
 
 
-    function addToCard(pId, pName, pPrice, pQuantity, pPhoto) {
+    /* function addToCard(pId, pName, pPrice, pQuantity, pPhoto) {
         let cart = localStorage.getItem('cart');
         if (cart == null || cart == '' || cart == 0) {
             // no cart
@@ -173,10 +163,10 @@ $(function () {
         }
 
         ShowingCart();
-    }
+    } */
 
     // updating and showing cart
-    function ShowingCart() {
+    /* function ShowingCart() {
         let cartString = localStorage.getItem('cart');
         let cart = JSON.parse(cartString);
 
@@ -184,98 +174,104 @@ $(function () {
         if (cart == null || cart.length == 0 || cart == undefined) {
             //console.log('cart is empty');
             totalItemsIntoCart = 0;
-            $('.total-items-into-cart').text(totalItemsIntoCart);
+            $('.add-to-cart-button-quantity').text(totalItemsIntoCart);
 
             totalItemsquantityIntoCart = 0;
             $('.quantity').text(totalItemsquantityIntoCart);
 
             $('.cart-sidebar').html(`<p>Cart is empty</p>`);
             $('.sub-total-amount').text(0);
+         
 
-        } else {
+        }  else {
             //cart is avilavle
             //console.log('cart is avilable');
-
+    
             // getting value of total items  on bag
             totalItemsIntoCart = cart.length;
-            $('.total-items-into-cart').text(totalItemsIntoCart);
-
+            $('.add-to-cart-button-quantity').text(totalItemsIntoCart);
+    
             totalItemsquantityIntoCart = cart.length;
             $('.quantity').text(totalItemsquantityIntoCart);
-
+    
             let ourCart = `
-            <div class="card card1">          
-        
-            `;
+                <div class="row">          
+            
+                `;
             let totalPrice = 0;
             cart.map((item) => {
                 ourCart += `
-                <div class="d-flex ">
-                    <div class="product-img">
-                        <img src="${item.pPhoto}" alt="">
-                        <br>
-                    </div>
-                    <div class="details text-center">
-                        <span class="name">${item.pName}</span>
-                        <br>
-                        <span class="decrease">-</span>
-                        <input type="text" min="1" max="" class="number-of-product" value="${item.pQuantity}">
-                        <span class="increase">+</span>
-                        <p>Rs. <span class="product-amount">${item.pPrice * item.pQuantity}</span></p>
+                <div class="col-lg-5">
+                    <div class="card card1">
+                        <div class="d-flex ">
+                            <div class="product-img">
+                                <img src="${item.pPhoto}" alt="">
+                                <br>
+                            </div>
+                            <div class="details text-center">
+                                <span class="name">${item.pName}</span>
+                                <br>
+                                <span class="decrease">-</span>
+                                <input type="text" min="1" max="" class="number-of-product" value="${item.pQuantity}">
+                                <span class="increase">+</span>
+                                <p>Rs. <span class="product-amount">${item.pPrice * item.pQuantity}</span></p>
+                            </div>
+                            <div class="remove-from-card " id="${item.pId}">
+                                <i class="far fa-trash-alt"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            <div class="remove-from-card " id="${item.pId}">                
-                <i class="far fa-trash-alt"></i>
-            </div>
-                `;
+                <div class="col-lg-2"></div>
+                    `;
                 totalPrice = item.pPrice * item.pQuantity;
             });
-
+    
             ourCart = ourCart + `</div>`;
-
+    
             $('.cart-sidebar').html(ourCart);
             $('.sub-total-amount').text(totalPrice);
-
-
-
+    
+    
+    
             // function for descreasing product quantity
             $('.card .details .decrease').click(function () {
                 let numberOfProductsIn = parseInt($('.card .details .number-of-product').val());
                 if (numberOfProductsIn == 1) {
                     numberOfProductsIn = 1
                 } else {
-                    console.log('numberOfProductsIn before decrease = '+numberOfProductsIn);
+                    console.log('numberOfProductsIn before decrease = ' + numberOfProductsIn);
                     numberOfProductsIn = numberOfProductsIn - 1;
                     $('.number-of-product').attr('value', numberOfProductsIn);
                     let thisProductAmount = parseInt(productAmount) * numberOfProductsIn;
                     $('.product-amount').text(thisProductAmount);
-                    $('.sub-total-amount').text(thisProductAmount);                     
+                    $('.sub-total-amount').text(thisProductAmount);
                     addToCard(id, productName, productAmount, numberOfProductsIn, productImg);
-                    console.log('numberOfProductsIn after decrease = '+numberOfProductsIn);
+                    console.log('numberOfProductsIn after decrease = ' + numberOfProductsIn);
                 }
             });
-
+    
             $('.card .details .increase').click(function () {
                 let numberOfProducts = parseInt($('.card .details .number-of-product').val());
-                console.log('numberOfProductsIn before decrease = '+numberOfProducts);
-
+                console.log('numberOfProductsIn before decrease = ' + numberOfProducts);
+    
                 numberOfProducts = numberOfProducts + 1;
                 $('.number-of-product').attr('value', numberOfProducts);
                 let thisProductAmount = parseInt(productAmount) * numberOfProducts;
                 $('.product-amount').text(thisProductAmount);
                 $('.sub-total-amount').text(thisProductAmount);
                 addToCard(id, productName, productAmount, numberOfProducts, productImg);
-                console.log('numberOfProductsIn after decrease = '+numberOfProducts);
-
-
+                console.log('numberOfProductsIn after decrease = ' + numberOfProducts);
+    
+    
             });
-
-
+    
+    
             // function for increasing product quantity            
-
-
-
-
+    
+    
+    
+    
             // function for changing input values
             $('.number-of-product').change(function () {
                 let numberOfProducts = parseInt($('.card .details .number-of-product').val());
@@ -283,33 +279,37 @@ $(function () {
                 let thisProductAmount = parseInt(productAmount) * numberOfProducts;
                 $('.product-amount').text(thisProductAmount);
                 $('.sub-total-amount').text(thisProductAmount);
-
+    
             });
-
-
-
+    
+    
+    
             // function for remove from card
-
-
-
+    
+    
+    
             // function for deleting item from cart
-
+    
         }
-    }
+    } */
 
     /* remove from cart */
-    let cartRId = $('.remove-from-card').attr('id')
-    $(document).on('click', '.remove-from-card', function () {
+    /* function remove_Item_From_Cart(cart_id){
+        id = cart_id;
+        alert(id);
+    } */
+    /* let cartRId = $('.remove-from-card').attr('id');
+    $(document).on('click', '.remove-from-card', function (cartRId) {
         let cart = JSON.parse(localStorage.getItem('cart'));
         let newUpdatedCart = cart.filter((item) => item.pId != cartRId);
         let Nocart = localStorage.setItem('cart', JSON.stringify(newUpdatedCart));
         if (Nocart == null || Nocart == '' || Nocart == 0) {
             localStorage.removeItem('cart');
             ShowingCart();
-            console.log('cart is removed');/*  */
+            console.log(cartRId+'=cart is removed');
         }
 
-    });
+    }); */
 
 
 
@@ -327,15 +327,25 @@ $(function () {
 
 
     // function for add to cart button click
-    $('.wishlist-button').click(function () {
-        addToWishlist(id, productName, productAmount, 1, productImg);
-    });
+    /* $('.wishlist-button').click(function () {       
+        $('.message').text('Item added to the Bag');
+        $('.message').css({
+            opacity: '1',
+            visibility: 'visible',
+            top: '100px',
+            transition: 'all .3s ease'
+        });    
+        setTimeout(() => {
+            $('.message').css({
+                opacity: '0',
+                visibility: 'hidden',
+                top: '0px'
+            });  
+        }, 700);  
+    }); */
 
-    let totalItemsIntowishlist = $('.total-items-into-wishlist').text();
-    totalItemsIntowishlist = parseInt(totalItemsIntowishlist);
 
-
-    function addToWishlist(pId, pName, pPrice, pQuantity, pPhoto) {
+   /*  function addToWishlist(pId, pName, pPrice, pQuantity, pPhoto) {
         let Wishlist = localStorage.getItem('Wishlist');
         if (Wishlist === null) {
             // no Wishlist
@@ -405,21 +415,21 @@ $(function () {
         }
         ShowingWishlist();
     }
-
-    ShowingWishlist();
+ */
+    /* ShowingWishlist();
     function ShowingWishlist() {
         let wishlistString = localStorage.getItem('Wishlist');
         let wishlist = JSON.parse(wishlistString);
         // if cart is empty
         if (wishlist == null || wishlist.length == 0) {
             $('.wishlist').html('<h2 class="text-center my-5">Wishlist is empty</h2>');
-            let totalItemsIntowishlist = wishlist.length;
-            $('.total-items-into-wishlist').text(totalItemsIntowishlist);
+            let totalItemsIntowishlist = 0;
+            $('.add-to-bag-button-quantity').text(totalItemsIntowishlist);
         } else {
 
             // getting value of total items  on bag
             let totalItemsIntowishlist = wishlist.length;
-            $('.total-items-into-wishlist').text(totalItemsIntowishlist);
+            $('.add-to-bag-button-quantity').text(totalItemsIntowishlist);
 
 
             let ourWishlist = `
@@ -434,7 +444,7 @@ $(function () {
                             <img src="${item.pPhoto}" alt="free-shiping-img">
                         </div>
                         <h3>${item.pName}</h3>
-                        <p>We ship free when you order above INR <span class="wishlist-pPrice">${item.pPrice}</span></p>
+                        <p>INR <span class="wishlist-pPrice">${item.pPrice}</span></p>
                         <p class="remove-from-wishlist" id='${item.pId}'>Remove from wishlist</p>
                     </div>
                 </div>
@@ -445,11 +455,11 @@ $(function () {
             $('.wishlist').html(ourWishlist);
 
         }
-    }
+    } */
 
     /*     remove from wishlist
      */
-    let wishliatRId = $('.remove-from-wishlist').attr('id')
+    /* let wishliatRId = $('.remove-from-wishlist').attr('id')
     $(document).on('click', '.remove-from-wishlist', function () {
         let wishlist = JSON.parse(localStorage.getItem('Wishlist'));
         let newUpdatedwishlist = wishlist.filter((item) => item.pId != wishliatRId);
@@ -459,10 +469,10 @@ $(function () {
             $('.total-items-into-wishlist').text(0);
             ShowingWishlist();   
         }else{
-            $('.total-items-into-wishlist').text(Newwishlist.length);
+            $('.add-to-bag-button-quantity').text(totalItemsIntowishlist);;
         }
 
-    });
+    }); */
 
 
 });
