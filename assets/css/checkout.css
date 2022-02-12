@@ -50,7 +50,7 @@
 }
 
 .add-to-card .card {
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
   border: none;
   border-bottom: 1px solid #eee;
@@ -58,7 +58,11 @@
 }
 
 .add-to-card .card .product-img img {
-  width: 200px;
+  width: 100px;
+}
+
+.add-to-card .card .order-now-button {
+  display: none;
 }
 
 .add-to-card .card .details {

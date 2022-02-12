@@ -55,15 +55,18 @@ $secondary-color: #2a353a;
         }
     } 
     .card{
-        margin-top: 50px;
+        margin-top: 20px;
         position: relative;
         border: none;
         border-bottom: 1px solid #eee;
         margin-bottom: 30px;
         .product-img{
             img{
-                width: 200px;
+                width: 100px;
             }
+        }
+        .order-now-button{
+            display: none;
         }
         .details{
             margin-left: 30px;
