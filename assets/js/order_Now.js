@@ -126,7 +126,7 @@ function ShowingCart() {
         let totalPrice = 0;
         cart.map((item) => {
             ourCart += `
-            <div class="col-lg-5">
+            <div class="col-lg-12">
                 <div class="card card1">
                     <div class="d-flex ">
                         <div class="product-img">

@@ -75,6 +75,26 @@ $(function () {
         }, 700);  
     });
 
+    $('.wishlist-button').click(function () {
+        $('.message').text('Item added to the wishlist');
+        $('.message').css({
+            opacity: '1',
+            visibility: 'visible',
+            top: '100px',
+            transition: 'all .3s ease'
+        });    
+        setTimeout(() => {
+            $('.message').css({
+                opacity: '0',
+                visibility: 'hidden',
+                top: '0px'
+            });  
+        }, 700);  
+    });
+
+
+   
+
 
     let totalItemsIntowishlist = $('.add-to-bag-button-quantity').text();
     totalItemsIntowishlist = parseInt(totalItemsIntowishlist);

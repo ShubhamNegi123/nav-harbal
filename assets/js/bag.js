@@ -1,6 +1,6 @@
 function addToWishlist(pId, pName, pPrice, pQuantity, pPhoto) {
     let Wishlist = localStorage.getItem('Wishlist');
-    if (Wishlist === null) {
+    if (Wishlist == null || Wishlist == '' || Wishlist.length <= 2) {
         // no Wishlist
         let products = []
 
@@ -75,7 +75,7 @@ function ShowingWishlist() {
     let wishlistString = localStorage.getItem('Wishlist');
     let wishlist = JSON.parse(wishlistString);
     // if cart is empty
-    if (wishlist == null || wishlist.length == 0) {
+    if (wishlist == null || wishlist.length == 0 || wishlist == undefined) {
         $('.wishlist').html('<h2 class="text-center my-5">Wishlist is empty</h2>');
         let totalItemsIntowishlist = 0;
         $('.add-to-bag-button-quantity').text(totalItemsIntowishlist);
@@ -112,6 +112,25 @@ function ShowingWishlist() {
 
 /* remove from wishlist */
 function remove_Item_From_Wishlist(Wishlist_id) {
+
+
+    $('.message').text('Item remove from wishlist ');
+    $('.message').css({
+        opacity: '1',
+        visibility: 'visible',
+        top: '100px',
+        transition: 'all .3s ease'
+    });    
+    setTimeout(() => {
+        $('.message').css({
+            opacity: '0',
+            visibility: 'hidden',
+            top: '0px'
+        });  
+    }, 700);
+
+
+    
     let id = Wishlist_id;
     let Wishlist = JSON.parse(localStorage.getItem('Wishlist'));
     let newUpdatedWishlist = Wishlist.filter((item) => item.pId != id);
