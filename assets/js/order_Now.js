@@ -120,8 +120,7 @@ function ShowingCart() {
         $('.quantity').text(totalItemsquantityIntoCart);
 
         let ourCart = `
-            <div class="row">          
-        
+            <div class="row">        
             `;
         let totalPrice = 0;
         cart.map((item) => {
@@ -236,27 +235,3 @@ function decrease_Quantity(pid) {
     ShowingCart();
 }
 
-
-/* function change_quantity(pid){
-    let id = pid;
-    let cart = localStorage.getItem('cart');
-    let pcart = JSON.parse(cart);
-    let oldProduct = pcart.find((item) => item.pId == id);
-    // only increase quantity of existing product
-    let changed_Quantity = $('.number-of-product').val();
-    oldProduct.pQuantity = parseInt(changed_Quantity);    
-    
-    // checking existing item id
-    pcart.map((item) => {
-        if (item.pId == oldProduct.pId) {
-            item.pQuantity = oldProduct.pQuantity;
-        }
-    });
-    /* updating quantity on ui */
-   /*  $('.number-of-product').val(oldProduct.pQuantity);
-    // updating new quantity inti cart
-    localStorage.setItem('cart', JSON.stringify(pcart));
-    console.log('existing product quantity is changed');  
-    ShowingCart();
-    
-}  */

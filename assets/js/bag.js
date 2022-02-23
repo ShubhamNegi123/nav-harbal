@@ -99,6 +99,8 @@ function ShowingWishlist() {
                     <h3>${item.pName}</h3>
                     <p>INR <span class="wishlist-pPrice">${item.pPrice}</span></p>
                     <p class="remove-from-wishlist" onclick="remove_Item_From_Wishlist('${item.pId}')">Remove from wishlist</p>
+                    <br>
+                    <a href="checkout.html" class="order-now-button">Order now</a>
                 </div>
             </div>
     `;
