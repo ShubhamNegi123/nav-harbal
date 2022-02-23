@@ -220,7 +220,8 @@ header .add-to-bag-icon {
 }
 
 .all-product {
-  margin-top: 50px;
+  background-color: #eee;
+  padding-top: 50px;
   margin-bottom: 50px;
 }
 

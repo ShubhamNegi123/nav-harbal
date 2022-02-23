@@ -56,6 +56,17 @@ $secondary-color: #2a353a;
                 background-color: $secondary-color;
             }
         }
+        .order-now-button{
+            background-color: $secondary-color;
+            color: #fff;                
+            padding: 5px 20px;
+            border-radius: 20px;
+            transition: all .3s ease;
+            &:hover{
+                transition: all .3s ease;
+                background-color: $primary-color;
+            }
+        }
     }
     
 }

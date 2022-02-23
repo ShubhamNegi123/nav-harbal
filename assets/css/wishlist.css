@@ -57,4 +57,19 @@
   transition: all .4s ease;
   background-color: #2a353a;
 }
+
+.all-products .product-card .order-now-button {
+  background-color: #2a353a;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.all-products .product-card .order-now-button:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #86b789;
+}
 /*# sourceMappingURL=wishlist.css.map */
