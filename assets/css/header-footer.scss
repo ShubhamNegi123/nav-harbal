@@ -285,6 +285,7 @@ footer {
             li {
                 margin-bottom: 5px;
                 a {
+                    text-transform: lowercase;
                     color: $secondary-color;
                     transition: all.3s ease;
                     &:hover {

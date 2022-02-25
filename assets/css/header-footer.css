@@ -327,6 +327,7 @@ footer .watermark a {
 }
 
 .shop-by-catogery .sub-catogery .deep-catogery li a {
+  text-transform: lowercase;
   color: #2a353a;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
