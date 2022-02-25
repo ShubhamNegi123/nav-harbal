@@ -273,7 +273,7 @@ header {
         }
     }
     .see-all-product {
-        margin-top: 50px;
+        margin-bottom: 50px;
         a {
             padding: 10px;
             background-color: $primary-color;
@@ -340,7 +340,8 @@ header {
             z-index: 99;
             font-size: 24px;
             top: 40%;
-            left: 40%;
+            left: 50%;
+            transform: translate(-50%);
             color: #fff;
             &::after {
                 transition: all 0.3s ease;
@@ -412,8 +413,9 @@ header {
             position: absolute;
             z-index: 99;
             font-size: 24px;
-            top: 40%;
-            left: 30%;
+            top: 40%;           
+            left: 50%;
+            transform: translate(-50%);
             color: #fff;
             &::after {
                 transition: all 0.3s ease;
@@ -760,4 +762,9 @@ footer {
         bottom: 70px;
         right: 300px;
     }
+}
+@media only screen and (max-width: 768px) {
+    footer .footer-nav {
+        margin-left: 0px;
+      }
 }

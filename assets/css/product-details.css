@@ -98,7 +98,7 @@
 .all-products .product-details .add-to-card-button, .all-products .product-details .wishlist-button {
   cursor: pointer;
   background-color: #2a353a;
-  padding: 10px 50px;
+  padding: 10px 20px;
   font-weight: 500;
   color: #fff;
   display: inline-block;
@@ -117,7 +117,7 @@
 .all-products .product-details .order-now-button {
   cursor: pointer;
   background-color: #2a353a;
-  padding: 10px 180px;
+  padding: 10px 120px;
   margin-top: 30px;
   font-weight: 500;
   color: #fff;
